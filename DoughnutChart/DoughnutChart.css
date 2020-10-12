@@ -1,0 +1,28 @@
+.DoughnutChart-animation-chart{
+    animation: DoughnutChart-animation-chart 2s linear;
+}
+@keyframes DoughnutChart-animation-chart {
+    from{
+        transform:scale(0) rotate(0);
+        transform-origin:center
+    }
+    to{
+        transform:scale(1) rotate(360deg);
+        transform-origin:center
+    }
+}
+.DoughnutChart-animation-lineText {
+    animation: DoughnutChart-animation-lineText 2s linear;
+}
+
+@keyframes DoughnutChart-animation-lineText {
+    0%{
+        opacity: 0;
+    }
+    93%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
