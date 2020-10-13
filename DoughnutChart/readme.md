@@ -19,3 +19,7 @@ example:
 ></DoughnutChart>
 ```
 
+result:
+
+![image-20201013114944255](C:\Users\iu\AppData\Roaming\Typora\typora-user-images\image-20201013114944255.png)
+
