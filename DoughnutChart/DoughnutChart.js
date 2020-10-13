@@ -8,11 +8,6 @@ export default class extends React.Component {
 		this.initProps()
 		this.processData()
 	}
-	
-	shouldComponentUpdate(nextProps){
-		this.startAnimation = nextProps.startAnimation
-		return true
-	}
 
 	initProps(){
         let {
@@ -25,8 +20,7 @@ export default class extends React.Component {
 				{name:'1',value:20,color:'#7cb5ec',unit:"%"},
 				{name:'2',value:30,color:'#2b908f',unit:"%"},
 				{name:'3',value:50,color:'#90ed7d',unit:"%"},
-			],
-			startAnimation = true
+			]
 		} = this.props
     
         // from props
@@ -42,7 +36,6 @@ export default class extends React.Component {
 			}
 		}())
 		this.data = data
-        this.startAnimation = startAnimation
         
         // new 
 		this.wholeWidth = diam + this.padding[1] + this.padding[3]
@@ -111,10 +104,11 @@ export default class extends React.Component {
 			borderWInn,
 			borderWOtr,
 			data,
-			diam,
-			startAnimation
+			diam
 		} = this
-    return (
+		const { startAnimation } = this.props
+		
+    	return (
 			<svg width={wholeWidth} height={wholeHeight}>
 				<circle className={startAnimation ? "DoughnutChart-animation-chart" : ''} cx={wholeWidth/2} cy={wholeHeight/2} r={diam/2+borderWOtr/2} stroke="rgba(1, 112, 144, 0.4)" strokeWidth={borderWOtr} fill="transparent"></circle>
 				{

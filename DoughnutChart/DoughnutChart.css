@@ -1,9 +1,9 @@
 .DoughnutChart-animation-chart{
-    animation: DoughnutChart-animation-chart 2s linear;
+    animation: DoughnutChart-animation-chart 3s linear;
 }
 @keyframes DoughnutChart-animation-chart {
     from{
-        transform:scale(0) rotate(0);
+        transform:scale(0.3) rotate(0);
         transform-origin:center
     }
     to{
@@ -12,7 +12,7 @@
     }
 }
 .DoughnutChart-animation-lineText {
-    animation: DoughnutChart-animation-lineText 2s linear;
+    animation: DoughnutChart-animation-lineText 3s linear;
 }
 
 @keyframes DoughnutChart-animation-lineText {
