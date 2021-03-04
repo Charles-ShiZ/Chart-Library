@@ -1,0 +1,10 @@
+.curveBar{
+
+  animation: curveBar  4s linear;
+}
+
+@keyframes curveBar {
+  from {
+    height: 0%;
+  }
+}

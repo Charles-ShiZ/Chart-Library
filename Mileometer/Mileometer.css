@@ -1,0 +1,21 @@
+.Mileometer-Animation-dot{
+    animation: Mileometer-Animation-dot 4s linear;
+}
+@keyframes Mileometer-Animation-dot {
+    from{
+        stroke-dashoffset: 687px;
+    }
+    to {
+        stroke-dashoffset: 159px;
+    }
+}
+
+.Mileometer-Animation-arc{
+    animation: Mileometer-Animation-arc 2s linear;
+}
+@keyframes Mileometer-Animation-arc {
+    from{
+        stroke-width: 0px;
+        /* stroke-dashoffset: 400px; */
+    }
+}

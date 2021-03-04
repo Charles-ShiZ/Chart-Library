@@ -1,0 +1,10 @@
+.CircleChartAnimation{
+
+    animation: CircleChartAnimation  2s linear;
+  }
+  
+  @keyframes CircleChartAnimation {
+    from {
+      r: 0;
+    }
+  }

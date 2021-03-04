@@ -1,0 +1,10 @@
+.animation-randonDotsChart{
+    animation: animation-randonDotsChart 2s linear
+}
+@keyframes animation-randonDotsChart {
+    from{
+        r: 0;
+        stroke:#54FCC3;
+        fill:#54FCC3
+    }
+}
